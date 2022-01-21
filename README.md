@@ -1,5 +1,7 @@
 ## Vite + Lit + Capacitor
 
+An example of Lit web component built with vite for use in capacitor.
+
 To run the web server:
 
 ```bash
