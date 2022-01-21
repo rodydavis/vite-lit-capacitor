@@ -1,0 +1,36 @@
+{
+  "name": "capacitor-app",
+  "version": "1.0.0",
+  "description": "An Amazing Capacitor App",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "npm-run-all -p build:*",
+    "build:web": "tsc && vite build",
+    "postbuild": "cap sync",
+    "open:android": "cap open android",
+    "open:ios": "cap open ios",
+    "start:android": "cap run android",
+    "start:ios": "cap run ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^3.4.0",
+    "@capacitor/camera": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/ios": "^3.4.0",
+    "@capacitor/splash-screen": "latest",
+    "lit": "^2.1.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest",
+    "@web/dev-server": "^0.1.29",
+    "npm-run-all": "^4.1.5",
+    "vite": "^2.7.2",
+    "typescript": "^4.4.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
