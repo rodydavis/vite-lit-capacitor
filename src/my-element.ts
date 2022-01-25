@@ -1,5 +1,6 @@
-import { html, css, LitElement } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
+import { html, css, LitElement } from "lit";
+import { customElement, property } from "lit/decorators.js";
+import { StatusBar, Style } from "@capacitor/status-bar";
 
 /**
  * An example element.
@@ -7,50 +8,91 @@ import { customElement, property } from 'lit/decorators.js'
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('my-element')
+@customElement("my-element")
 export class MyElement extends LitElement {
   static styles = css`
-    :host {
-      display: block;
-      border: solid 1px gray;
-      padding: 16px;
-      max-width: 800px;
+    main {
+      --bg-color: #f0f0f0;
+      --fg-color: #000;
+      --app-bar-color: navy;
+      --app-bar-on-color: white;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      /* Set the background color for the notch */
+      background-color: var(--app-bar-color);
+      padding-top: var(--inset-top);
+      padding-bottom: var(--inset-bottom);
+      padding-left: var(--inset-left);
+      padding-right: var(--inset-right);
     }
-  `
+    header {
+      background-color: var(--app-bar-color);
+      color: var(--app-bar-on-color);
+      padding: 1rem;
+    }
+    section {
+      padding: 1rem;
+      background-color: var(--bg-color);
+      color: var(--fg-color);
+      flex: 1;
+    }
+    @media (prefers-color-scheme: dark) {
+      section {
+        color: var(--bg-color);
+        background-color: var(--fg-color);
+      }
+    }
+  `;
 
   /**
    * The name to say "Hello" to.
    */
   @property()
-  name = 'World'
+  name = "World";
 
   /**
    * The number of times the button has been clicked.
    */
   @property({ type: Number })
-  count = 0
+  count = 0;
 
   render() {
     return html`
-      <h1>Hello, ${this.name}!</h1>
-      <button @click=${this._onClick} part="button">
-        Click Count: ${this.count}
-      </button>
-      <slot></slot>
-    `
+      <main>
+        <header><span class="title"> Hello, ${this.name}! </span></header>
+        <section>
+          <button @click=${this._onClick} part="button">
+            Click Count: ${this.count}
+          </button>
+          <slot></slot>
+        </section>
+      </main>
+    `;
   }
 
   private _onClick() {
-    this.count++
+    this.count++;
   }
 
   foo(): string {
-    return 'foo'
+    return "foo";
+  }
+
+  firstUpdated() {
+    StatusBar.setOverlaysWebView({ overlay: true });
+
+    const setStatusBarStyleDark = async () => {
+      await StatusBar.setStyle({ style: Style.Dark });
+    };
+
+    setStatusBarStyleDark();
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement
+    "my-element": MyElement;
   }
 }

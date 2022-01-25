@@ -1,4 +1,4 @@
-import { LitElement } from 'lit';
+import { LitElement } from "lit";
 /**
  * An example element.
  *
@@ -18,9 +18,10 @@ export declare class MyElement extends LitElement {
     render(): import("lit-html").TemplateResult<1>;
     private _onClick;
     foo(): string;
+    firstUpdated(): void;
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'my-element': MyElement;
+        "my-element": MyElement;
     }
 }
