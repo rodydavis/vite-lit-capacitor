@@ -10,13 +10,17 @@
     "dev": "vite",
     "build": "npm-run-all -p build:*",
     "build:web": "tsc && vite build",
-    "postbuild": "cap sync",
+    "postbuild": "cap sync && npm run copy",
+    "copy": "rm -rf electron/app && mkdir electron/app && cp -r dist/* electron/app/",
     "open:android": "cap open android",
     "open:ios": "cap open ios",
+    "open:desktop": "cap open @capacitor-community/electron",
     "start:android": "cap run android",
-    "start:ios": "cap run ios"
+    "start:ios": "cap run ios",
+    "start:web": "vite preview"
   },
   "dependencies": {
+    "@capacitor-community/electron": "^4.0.3",
     "@capacitor/android": "^3.4.0",
     "@capacitor/camera": "latest",
     "@capacitor/core": "latest",
@@ -25,11 +29,12 @@
     "lit": "^2.1.1"
   },
   "devDependencies": {
+    "@types/node": "^17.0.12",
     "@capacitor/cli": "latest",
     "@web/dev-server": "^0.1.29",
     "npm-run-all": "^4.1.5",
-    "vite": "^2.7.2",
-    "typescript": "^4.4.4"
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
   },
   "author": "",
   "license": "ISC"
