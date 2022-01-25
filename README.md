@@ -52,3 +52,4 @@ npm run dev
 - https://webnative.tech/
 - https://lit.dev/
 - https://vitejs.dev/
+- https://www.typescriptlang.org/
