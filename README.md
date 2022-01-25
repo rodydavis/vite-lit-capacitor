@@ -20,3 +20,8 @@ To run ios or android:
 npm run start:ios
 npm run start:android
 ```
+
+To run desktop:
+```bash
+npm run open:desktop
+```
