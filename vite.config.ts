@@ -3,6 +3,7 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/vite-lit-capacitor/",
   build: {
     rollupOptions: {
       input: "index.html",
