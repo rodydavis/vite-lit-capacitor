@@ -19,24 +19,30 @@ export class MyElement extends LitElement {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 100%;
-      /* Set the background color for the notch */
+      /* Settings for the notch */
       background-color: var(--app-bar-color);
       padding-top: var(--inset-top);
-      padding-bottom: var(--inset-bottom);
-      padding-left: var(--inset-left);
-      padding-right: var(--inset-right);
+      height: calc(100% - var(--inset-top));
     }
     header {
       background-color: var(--app-bar-color);
       color: var(--app-bar-on-color);
       padding: 1rem;
+      padding-left: var(--inset-left);
+      padding-right: var(--inset-right);
+    }
+    .title {
+      padding-left: 1rem;
     }
     section {
       padding: 1rem;
       background-color: var(--bg-color);
       color: var(--fg-color);
       flex: 1;
+      /* Settings for the notch */
+      padding-bottom: var(--inset-bottom);
+      padding-left: var(--inset-left);
+      padding-right: var(--inset-right);
     }
     @media (prefers-color-scheme: dark) {
       section {

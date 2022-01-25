@@ -9,6 +9,7 @@ An example of Lit web component built with vite for use in capacitor.
 - 🖥 Desktop
 - 📱 iOS/Android
 - 🛠 Vite
+- 🌐 PWA
 
 ## Getting Started
 
@@ -35,3 +36,8 @@ To run desktop:
 ```bash
 npm run open:desktop
 ```
+
+## Screenshots
+
+![](/screenshots/light.png)
+![](/screenshots/dark.png)
