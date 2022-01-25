@@ -43,8 +43,7 @@ npm run dev
 
 ## Screenshots
 
-<img src="screenshots/light.png" height="500" />	
-<img src="screenshots/dark.png" height="500" />	
+ <img src="screenshots/light.png" height="500" /> <img src="screenshots/dark.png" height="500" />	 
 
 ## Links
 
