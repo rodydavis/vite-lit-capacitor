@@ -1,6 +1,10 @@
 ## Vite + Lit + Capacitor
 
+[![Demo](https://github.com/rodydavis/vite-lit-capacitor/actions/workflows/ci.yml/badge.svg)](https://github.com/rodydavis/vite-lit-capacitor/actions/workflows/ci.yml)
+
 An example of Lit web component built with vite for use in capacitor.
+
+[Demo](https://rodydavis.github.io/vite-lit-capacitor/)
 
 ## Features
 
