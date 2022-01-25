@@ -35,14 +35,14 @@ export class MyElement extends LitElement {
       padding-left: 1rem;
     }
     section {
-      padding: 1rem;
       background-color: var(--bg-color);
       color: var(--fg-color);
       flex: 1;
       /* Settings for the notch */
-      padding-bottom: var(--inset-bottom);
-      padding-left: var(--inset-left);
-      padding-right: var(--inset-right);
+      padding-bottom: calc(var(--inset-bottom) + 1rem);
+      padding-left: calc(var(--inset-left) + 1rem);
+      padding-right: calc(var(--inset-right) + 1rem);
+      padding-top: 1rem;
     }
     @media (prefers-color-scheme: dark) {
       section {
