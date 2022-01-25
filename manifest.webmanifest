@@ -1,1 +1,1 @@
-{"name":"App","short_name":"App","start_url":"index.html","display":"standalone","background_color":"#31d53d","lang":"en","scope":"/","icons":[],"theme_color":"#31d53d"}
+{"name":"App","short_name":"App","start_url":"index.html","display":"standalone","background_color":"#31d53d","lang":"en","scope":"/vite-lit-capacitor/","icons":[],"theme_color":"#31d53d"}
