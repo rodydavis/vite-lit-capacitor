@@ -17,12 +17,6 @@ An example of Lit web component built with vite for use in capacitor.
 
 ## Getting Started
 
-To run the web server:
-
-```bash
-npm run dev
-```
-
 To build the web folder and sync the assets:
 
 ```bash
@@ -39,6 +33,12 @@ npm run start:android
 To run desktop:
 ```bash
 npm run open:desktop
+```
+
+To run web:
+
+```bash
+npm run dev
 ```
 
 ## Screenshots
