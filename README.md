@@ -10,6 +10,8 @@ An example of Lit web component built with vite for use in capacitor.
 - 📱 iOS/Android
 - 🛠 Vite
 
+## Getting Started
+
 To run the web server:
 
 ```bash
