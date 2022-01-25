@@ -10,9 +10,9 @@ An example of Lit web component built with vite for use in capacitor.
 
 - ✅ Typescript
 - 🔥 Lit
+- 🛠 Vite
 - 🖥 Desktop
 - 📱 iOS/Android
-- 🛠 Vite
 - 🌐 PWA
 
 ## Getting Started
