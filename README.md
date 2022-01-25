@@ -45,3 +45,10 @@ npm run dev
 
 ![](/screenshots/light.png)
 ![](/screenshots/dark.png)
+
+## Links
+
+- https://capacitorjs.com/
+- https://webnative.tech/
+- https://lit.dev/
+- https://vitejs.dev/
