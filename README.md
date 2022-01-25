@@ -2,6 +2,14 @@
 
 An example of Lit web component built with vite for use in capacitor.
 
+## Features
+
+- ✅ Typescript
+- 🔥 Lit
+- 🖥 Desktop
+- 📱 iOS/Android
+- 🛠 Vite
+
 To run the web server:
 
 ```bash
