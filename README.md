@@ -43,8 +43,7 @@ npm run dev
 
 ## Screenshots
 
-![](/screenshots/light.png)
-![](/screenshots/dark.png)
+ <img src="screenshots/light.png" height="650" /> <img src="screenshots/dark.png" height="650" />	 
 
 ## Links
 
